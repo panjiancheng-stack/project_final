@@ -1,8 +1,11 @@
 package com.shanyangcode.infintechatagent.ai;
 
+import com.shanyangcode.infintechatagent.config.McpToolConfig;
+import com.shanyangcode.infintechatagent.tool.TimeTool;
 import dev.langchain4j.data.document.Document;
 import dev.langchain4j.data.document.loader.FileSystemDocumentLoader;
 import dev.langchain4j.data.segment.TextSegment;
+import dev.langchain4j.mcp.McpToolProvider;
 import dev.langchain4j.memory.chat.MessageWindowChatMemory;
 import dev.langchain4j.model.chat.ChatModel;
 import dev.langchain4j.rag.content.retriever.EmbeddingStoreContentRetriever;
@@ -24,6 +27,9 @@ public class AiChatService {
     @Resource
     private EmbeddingStore<TextSegment> embeddingStore;
 
+    @Resource
+    private McpToolProvider mcpToolProvider;
+
     @Bean
     public AiChat aiChat() {
 
@@ -34,6 +40,8 @@ public class AiChatService {
                 .chatModel(chatModel)
                 .contentRetriever(EmbeddingStoreContentRetriever.from(embeddingStore))
                 .chatMemoryProvider(memoryId -> MessageWindowChatMemory.withMaxMessages(10))
+                .tools(new TimeTool())
+                .toolProvider(mcpToolProvider)
                 .build();
     }
 

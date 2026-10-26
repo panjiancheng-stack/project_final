@@ -20,4 +20,8 @@ langchain4j:
     dashscope:
       chat-model:
         model-name: qwen-max
-        api-key: xxxxx
+        api-key: <Key>
+
+
+bigmodel:
+  api-key: <Key>

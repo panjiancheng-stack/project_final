@@ -1,0 +1,38 @@
+spring:
+  application:
+    name: UserService
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://localhost:49152/InfiniteChat?useUnicode=true&characterEncoding=UTF-8&serverTimezone=Asia/Shanghai
+    username: root
+    password: <password>
+  data:
+    redis:
+      database: 2
+      host: localhost
+      port: 59000
+      password: <password>
+      timeout: 30000
+  mail:
+    host: smtp.qq.com
+    port: 587
+    username: <邮箱>
+    password: <授权码>
+    properties:
+      mail:
+        smtp:
+          auth: true
+          starttls:
+            enable: true
+
+
+mybatis-plus:
+  global-config:
+    db-config:
+      logic-delete-field: isDelete
+      logic-delete-value: 1
+      logic-not-delete-value: 0
+
+
+server:
+  port: 8104

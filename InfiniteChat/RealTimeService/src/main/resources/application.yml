@@ -1,0 +1,18 @@
+spring:
+  application:
+    name: RealTimeService
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://localhost:49152/InfiniteChat?useUnicode=true&characterEncoding=UTF-8&serverTimezone=Asia/Shanghai
+    username: root
+    password: <password>
+  data:
+    redis:
+      database: 2
+      host: localhost
+      port: 59000
+      password: <password>
+      timeout: 30000
+
+server:
+  port: 8102
