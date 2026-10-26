@@ -1,0 +1,30 @@
+# ---- Maven / Spring Boot build output ----
+target/
+build/
+.mvn/wrapper/maven-wrapper.jar
+HELP.md
+
+# ---- Spring / STS ----
+.apt_generated
+.classpath
+.factorypath
+.project
+.settings
+.springBeans
+.sts4-cache
+
+# ---- IntelliJ IDEA ----
+.idea/
+*.iml
+*.iws
+*.ipr
+
+# ---- NetBeans ----
+/nbproject/private/
+/nbbuild/
+/dist/
+/nbdist/
+/.nb-gradle/
+
+# ---- VS Code ----
+.vscode/
