@@ -1,9 +1,10 @@
 package com.shanyangcode.common.utils;
 
 
-import cn.hutool.jwt.Claims;
+import io.jsonwebtoken.*;
+
 import com.shanyangcode.common.constant.CommonConstant;
-import io.jsonwebtoken.;
+import io.jsonwebtoken.*;
 import io.jsonwebtoken.io.Decoders;
 import io.jsonwebtoken.security.Keys;
 import lombok.extern.slf4j.Slf4j;
