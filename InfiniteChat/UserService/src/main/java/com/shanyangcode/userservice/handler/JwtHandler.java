@@ -3,7 +3,6 @@ package com.shanyangcode.userservice.handler;
 import com.shanyangcode.userservice.common.ErrorCode;
 import com.shanyangcode.userservice.constant.UserConstant;
 import com.shanyangcode.userservice.exception.BusinessException;
-import com.shanyangcode.userservice.utils.JwtUtil;
 
 import io.jsonwebtoken.Claims;
 import jakarta.annotation.Resource;

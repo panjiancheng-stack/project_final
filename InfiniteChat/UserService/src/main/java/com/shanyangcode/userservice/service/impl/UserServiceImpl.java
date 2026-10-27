@@ -18,7 +18,6 @@ import com.shanyangcode.userservice.model.vo.TokenResponse;
 import com.shanyangcode.userservice.service.UserService;
 
 import com.shanyangcode.userservice.utils.EmailUtil;
-import com.shanyangcode.userservice.utils.JwtUtil;
 import com.shanyangcode.userservice.utils.RandomCodeUtil;
 import io.jsonwebtoken.Claims;
 import jakarta.annotation.Resource;
