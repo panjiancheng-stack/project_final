@@ -17,4 +17,5 @@ public class UserConstant {
 
     public static final Integer DATA_CENTER_ID = 1;
 
+
 }
